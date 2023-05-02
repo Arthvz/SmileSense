@@ -43,6 +43,11 @@ module.exports = {
       fontFamily: {
         Kenit: ['Kenit', 'sans-serif'],
       },
+      height: {
+        '128': '32rem',
+        '132': '38rem',
+        '148': '44rem',
+      }
     },
   },
   plugins: [

@@ -17,6 +17,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,800&display=swap" rel="stylesheet">
   @vite('resources/css/app.css')
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet"> 
+
+  <script src="/resources/js/map.js"></script>
 </head>
 <body class="bg-neutral-100 scroll-smooth">
 <header class="bg-neutral-100 shadow-lg shadow-blueSS-600 mb-4">
@@ -76,7 +78,13 @@
     </div>
   </div>
 </header>
-<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29244.22375290852!2d-46.80434871544596!3d-23.621256020506728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce546123a13c61%3A0x1f856c4bbae6eb84!2sTabo%C3%A3o%20da%20Serra%2C%20State%20of%20S%C3%A3o%20Paulo!5e0!3m2!1sen!2sbr!4v1681526240749!5m2!1sen!2sbr" width="1920" height="720" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <div id="map" class ="w-full h-148"></div>
+
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv7YRz1WWPhkr6aim8wEm4WDPBdk81z54&callback=initMap&v=weekly"
+    async
+  ></script>
 </body>
 <footer class="footer footer-center p-10 bg-neutral-100 text-base-content rounded">
   <div class="grid text-neutral-600 grid-flow-col gap-4">
@@ -105,5 +113,23 @@
     <p class="text-neutral-600">Copyright © 2023 - Todos os direitos reservados Smile Sense.</p>
   </div>
 </footer>
-<script src="SmileSense\resources\js\markers.js"></script>
+<script>
+  let map;
+
+  function initMap() {
+      const myLatLng = { lat: -23.6071, lng: -46.752 };
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 14,
+        center: myLatLng,
+      });
+      
+      //LOCAIS DE AGRESSÃO
+      var beachMarker = new google.maps.Marker({
+          position: new google.maps.LatLng(-23.619627,-46.771811),
+          map: map,
+          icon: '/images/blue_Marker.png',
+          title: "Praça do Taboão (Locais de Agressão)",
+        });
+  }
+</script>
 </html>
