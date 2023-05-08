@@ -22,6 +22,12 @@
 <!-- Header -->
 <header>
    <body class="bg-blue-200">
+   function conexaoPDO(){	
+		#Iniciando conexão com banco de dados
+		$pdo = new PDO ('mysql:dbname=TCc','root', 'password=Ju04102005');
+		$pdo->setattribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
+		return $pdo;
+	}
    <!-- component -->
 <div class="flex flex-col">
     <div class="overflow-x-auto sm:mx-0.5 lg:mx-0.5">
@@ -39,6 +45,17 @@
     <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
     Agendamentos
     </th>
+    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+    <button>function buscarTodasEditoras(){	
+		$pdo = conexaoPDO();
+		$stmt = $pdo->prepare("select * from Consulta;");
+		$stmt->execute();
+		$pdo = null;
+		return $stmt;</button>
+    }
+    </th>
+    
+    
     </tr>
     </thead>
     <tbody>
