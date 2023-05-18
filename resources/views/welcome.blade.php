@@ -317,12 +317,12 @@
       </script>
 
 </body>
-<footer class="footer footer-center p-10 bg-neutral-100 text-base-content rounded">
+<oter class="footer footer-center p-10 bg-neutral-100 text-base-content rounded">
   <div class="grid text-neutral-600 grid-flow-col gap-4">
     <a class="link link-hover">Sobre nós</a> 
     <a class="link link-hover">Contato</a> 
     <a class="link link-hover">Comprar</a> 
-    <a class="link link-hover">Consultórios</a>
+    <a class="lifonk link-hover">Consultórios</a>
   </div> 
   <div>
     <div class="grid grid-flow-col text-neutral-600 gap-4">

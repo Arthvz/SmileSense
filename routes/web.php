@@ -36,3 +36,7 @@ Route::get('/log-in/empresa', function () {
 Route::get('/log-in/paciente', function () {
     return view('telalog');
 })->name('logPac');;
+
+Route::get('/consulta', function () {
+    return view('tela_consul');
+})->name('consulPac');;
