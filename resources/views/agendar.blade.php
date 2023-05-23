@@ -21,12 +21,12 @@
   <script src="/resources/js/map.js"></script>
 </head>
 <body class="bg-neutral-100 scroll-smooth">
-<header class="bg-neutral-100 shadow-lg shadow-blueSS-600 mb-4">
+<header class="bg-neutral-100 shadow-lg shadow-blueSS-600 mb-7">
   <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
     <div class="flex lg:flex-1">
       <a href="#" class="-m-1.5 p-1.5">
         <span class="sr-only">Smile Sense</span>
-        <img class="h-36 w-auto" src="/images/logo.png" alt="">
+        <img class="h-36 w-auto" src="/images/logo.png" alt="Smile Sense - Logo de um dente com cores brancas e cinzas, e uma faixa azul, junto com o nome da Smile Sense!">
       </a>
     </div>
     <div class="flex lg:hidden">
@@ -39,23 +39,25 @@
     </div>
     <div class="hidden lg:flex lg:gap-x-12">
       <a href="{{route('home')}}" class="text-xl shadow-xl shadow-neutral-600 underline decoration-2  hover:underline-offset-4 hover:decoration-4 font-extrabold leading-6 text-blueSS-300/80">Home</a>
+      <a href="#sobre" class="text-xl shadow-xl shadow-neutral-600 underline decoration-2  hover:underline-offset-4 hover:decoration-4 font-extrabold leading-6 text-blueSS-300/80">Sobre</a>
+      <a href="#sistema" class="text-xl shadow-xl shadow-neutral-600 underline decoration-2  hover:underline-offset-4 hover:decoration-4 font-extrabold leading-6 text-blueSS-300/80">Sistema</a>
       <a href="{{route('agendar')}}" class="text-xl shadow-xl shadow-neutral-600 underline decoration-2  hover:underline-offset-4 hover:decoration-4 font-extrabold leading-6 text-blueSS-300/80">Agendar</a>
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-      <a href="#" class="text-l shadow-2xl shadow-neutral-600 font-bold leading-6 text-blueSS-300/80">Log in <span aria-hidden="true">&rarr;</span></a>
+      <a href="{{route('log-in')}}" class="text-l shadow-2xl shadow-neutral-600 font-bold leading-6 text-blueSS-300/80">Log in <span aria-hidden="true">&rarr;</span></a>
     </div>
   </nav>
   <!-- Mobile menu, show/hide based on menu open state. -->
-  <div class="lg:hidden" role="dialog" aria-modal="true">
+  <div id="mobile-menu" class="lg:hidden" role="dialog" aria-modal="true">
     <!-- Background backdrop, show/hide based on slide-over state. -->
     <div class="fixed inset-0 z-10"></div>
     <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-blueSS-400 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
       <div class="flex items-center justify-between">
         <a href="#" class="-m-1.5 p-1.5">
           <span class="sr-only">Smile Sense</span>
-          <img class="h-24 w-auto" src="/images/logov1.png" alt="Smile Sense - Logo de um dente com cores brancas e cinzas, e uma faixa azul, junto com o nome da Smile Sense!">
+          <img class="h-24 w-auto" src="/images/logov1.png" alt="">
         </a>
-        <button type="button" class="-m-2.5 rounded-md p-2.5 text-neutral-100">
+        <button id="menu-toggle" type="button" class="-m-2.5 rounded-md p-2.5 text-neutral-100">
           <span class="sr-only">Close menu</span>
           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -66,12 +68,12 @@
         <div class="-my-6 divide-y divide-neutral-300">
           <div class="space-y-2 py-6">
             <a href="{{route('home')}}" class="-mx-3 block rounded-lg px-3 py-2 underline decoration-2  hover:underline-offset-4 hover:decoration-4 text-base font-semibold leading-7 text-neutral-100 hover:bg-gray-50 hover:text-blueSS-300">Home</a>
-            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 underline decoration-2  hover:underline-offset-4 hover:decoration-4 text-base font-semibold leading-7 text-neutral-100 hover:bg-gray-50 hover:text-blueSS-300">Sobre</a>
-            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 underline decoration-2  hover:underline-offset-4 hover:decoration-4 text-base font-semibold leading-7 text-neutral-100 hover:bg-gray-50 hover:text-blueSS-300">Sistema</a>
+            <a href="#sobre" class="-mx-3 block rounded-lg px-3 py-2 underline decoration-2  hover:underline-offset-4 hover:decoration-4 text-base font-semibold leading-7 text-neutral-100 hover:bg-gray-50 hover:text-blueSS-300">Sobre</a>
+            <a href="#sistema" class="-mx-3 block rounded-lg px-3 py-2 underline decoration-2  hover:underline-offset-4 hover:decoration-4 text-base font-semibold leading-7 text-neutral-100 hover:bg-gray-50 hover:text-blueSS-300">Sistema</a>
             <a href="{{route('agendar')}}" class="-mx-3 block rounded-lg px-3 py-2 underline decoration-2  hover:underline-offset-4 hover:decoration-4 text-base font-semibold leading-7 text-neutral-100 hover:bg-gray-50 hover:text-blueSS-300">Agendar</a>
           </div>
           <div class="py-6">
-            <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-neutral-100 hover:bg-gray-50">Log in</a>
+            <a href="{{route('log-in')}}" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-neutral-100 hover:bg-gray-50 hover:text-blueSS-300">Log in</a>
           </div>
         </div>
       </div>
@@ -91,7 +93,7 @@
     <a class="link link-hover">Sobre nós</a> 
     <a class="link link-hover">Contato</a> 
     <a class="link link-hover">Comprar</a> 
-    <a class="link link-hover">Consultórios</a>
+    <a class="lifonk link-hover">Consultórios</a>
   </div> 
   <div>
     <div class="grid grid-flow-col text-neutral-600 gap-4">
@@ -113,6 +115,23 @@
     <p class="text-neutral-600">Copyright © 2023 - Todos os direitos reservados Smile Sense.</p>
   </div>
 </footer>
+
+      <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', function() {
+          if (mobileMenu.classList.contains('hidden')) {
+            mobileMenu.classList.remove('hidden');
+            mobileMenu.classList.add('block');
+          } else {
+            mobileMenu.classList.remove('block');
+            mobileMenu.classList.add('hidden');
+          }
+        });
+
+      </script>
+
 <script>
   let map;
 

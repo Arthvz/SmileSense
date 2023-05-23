@@ -317,7 +317,7 @@
       </script>
 
 </body>
-<oter class="footer footer-center p-10 bg-neutral-100 text-base-content rounded">
+<footer class="footer footer-center p-10 bg-neutral-100 text-base-content rounded">
   <div class="grid text-neutral-600 grid-flow-col gap-4">
     <a class="link link-hover">Sobre nós</a> 
     <a class="link link-hover">Contato</a> 
