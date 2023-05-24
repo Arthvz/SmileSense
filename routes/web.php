@@ -40,3 +40,7 @@ Route::get('/log-in/paciente', function () {
 Route::get('/consulta', function () {
     return view('tela_consul');
 })->name('consulPac');;
+
+Route::get('/Pagteste', function () {
+    return view('Pagteste');
+})->name('Pagteste');;
