@@ -14,22 +14,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,800&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="/SmileSense/logo.jfif" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet"> 
+  <link rel="icon" type="image/x-icon" href="/images/favicon/favicon.ico">
   
     <title>Tela Consulta</title>
 </head>
 <body>
-<h1>Tela de Consulta</h1>
 
-        <form action="{{ route('tela_consul') }}" method="GET">
-            <input type="text" name="search" value="{{ $search }}" placeholder="Digite o nome do usuário">
-            <button type="submit">Buscar</button>
-        </form>
-    
-        <ul>
-            @foreach ($users as $user)
-                <li>{{ $user->name }}</li>
-            @endforeach
-        </ul>
 </html><!-- component -->
 <!-- Header -->
 <header class="bg-neutral-100 shadow-lg shadow-blueSS-600 mb-7">
@@ -91,7 +81,8 @@
     </div>
   </div>
 </header>
-    <body class="bg-blue-300">
+
+    <body class="bg-neutral-100 scroll-smooth">
 
     </body>
 
