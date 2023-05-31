@@ -37,8 +37,6 @@
     </div>
     <div class="hidden lg:flex lg:gap-x-12">
       <a href="{{route('home')}}" class="text-xl shadow-xl shadow-neutral-600 underline decoration-2  hover:underline-offset-4 hover:decoration-4 font-extrabold leading-6 text-blueSS-300/80">Home</a>
-      <a href="#sobre" class="text-xl shadow-xl shadow-neutral-600 underline decoration-2  hover:underline-offset-4 hover:decoration-4 font-extrabold leading-6 text-blueSS-300/80">Sobre</a>
-      <a href="#sistema" class="text-xl shadow-xl shadow-neutral-600 underline decoration-2  hover:underline-offset-4 hover:decoration-4 font-extrabold leading-6 text-blueSS-300/80">Sistema</a>
       <a href="{{route('agendar')}}" class="text-xl shadow-xl shadow-neutral-600 underline decoration-2  hover:underline-offset-4 hover:decoration-4 font-extrabold leading-6 text-blueSS-300/80">Agendar</a>
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -66,8 +64,6 @@
         <div class="-my-6 divide-y divide-neutral-300">
           <div class="space-y-2 py-6">
             <a href="{{route('home')}}" class="-mx-3 block rounded-lg px-3 py-2 underline decoration-2  hover:underline-offset-4 hover:decoration-4 text-base font-semibold leading-7 text-neutral-100 hover:bg-gray-50 hover:text-blueSS-300">Home</a>
-            <a href="#sobre" class="-mx-3 block rounded-lg px-3 py-2 underline decoration-2  hover:underline-offset-4 hover:decoration-4 text-base font-semibold leading-7 text-neutral-100 hover:bg-gray-50 hover:text-blueSS-300">Sobre</a>
-            <a href="#sistema" class="-mx-3 block rounded-lg px-3 py-2 underline decoration-2  hover:underline-offset-4 hover:decoration-4 text-base font-semibold leading-7 text-neutral-100 hover:bg-gray-50 hover:text-blueSS-300">Sistema</a>
             <a href="{{route('agendar')}}" class="-mx-3 block rounded-lg px-3 py-2 underline decoration-2  hover:underline-offset-4 hover:decoration-4 text-base font-semibold leading-7 text-neutral-100 hover:bg-gray-50 hover:text-blueSS-300">Agendar</a>
           </div>
           <div class="py-6">
@@ -78,13 +74,14 @@
     </div>
   </div>
 </header>
-    <div class="flex w-auto sm:my-12 md:my-64 md:mx-52 lg:my-80 lg:mx-56">
-        <a href="{{route('logPac')}}"><img src="/images/pacientes.png" alt="Card - Paciente" class="opacity-50 hover:opacity-100"/></a>
+    <div class="flex w-auto sm:my-12 md:my-64 md:mx-52 lg:my-56 lg:mx-56">
+        <a href="{{route('logPac')}}"><img src="/images/pacientes.png" alt="Card - Paciente" class="opacity-50 ml-28 hover:opacity-100"/></a>
         <div class="divider lg:divider-horizontal">OU</div> 
         <a href="{{route('logCli')}}"><img src="/images/clinicas.png" alt="Card - Clínica/Empresa" class="opacity-50 hover:opacity-100"/></a>
     </div>
-    <a href="{{route('home')}}" class="text-xl shadow-xl shadow-neutral-600 underline decoration-2  hover:underline-offset-4 hover:decoration-4 font-extrabold leading-6 text-blueSS-300/80">Home</a>
-
+    <div class="flex w-auto md:mx-52 lg:mx-56">
+      <a href="{{route('home')}}" class="text-xl shadow-xl shadow-neutral-600 underline decoration-2 hover:underline-offset-4 hover:decoration-4 font-extrabold leading-6 text-blueSS-300/80">Home</a>
+    </div>
     
     <script>
         const menuToggle = document.getElementById('menu-toggle');

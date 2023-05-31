@@ -25,7 +25,7 @@ Route::get('/agendar/', function () {
 })->name('agendar');;
 
 Route::get('/comprar/', function () {
-    return view('compra');
+    return view('Pagteste');
 })->name('compra');;
 
 Route::get('/log-in/', function () {
@@ -44,6 +44,6 @@ Route::get('/consulta', function () {
     return view('tela_consul');
 })->name('consulPac');;
 
-Route::get('/Pagteste', function () {
-    return view('Pagteste');
-})->name('Pagteste');;
+//Route::get('/Pagteste', function () {
+//    return view('Pagteste');
+//})->name('Pagteste');;
