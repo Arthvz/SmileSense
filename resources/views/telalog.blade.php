@@ -96,7 +96,14 @@
                 <div class="nb-4">
                     <p><a href="#" class="text-indigo-600">Esqueceu sua senha?</a></p>
                     <select data-te-select-init>
-                        <option value="1">Primeira Clinica</option>
+                        <option value="1">
+                          <?php
+
+                          $empresas = DB::select('select * from Cliente_Empresa' );
+                          foreach ($empresas as $empresa) {
+                          echo $empresa->NOME_EMPRESA;
+                      } 
+                      ?></option>
                         <option value="2">Segunda Clinica</option>
                         <option value="3">Terceira Clinica</option>
                         <option value="4">Quarta Clinica</option>

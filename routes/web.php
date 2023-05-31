@@ -1,7 +1,10 @@
 <?php
 
+use App\Http\Controllers\{SmileController};
+
 use Illuminate\Support\Facades\Route;
 
+Route::get('/index', [SmileController::class,'index',]);
 /*
 |--------------------------------------------------------------------------
 | Web Routes

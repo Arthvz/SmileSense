@@ -83,7 +83,14 @@
 </header>
 
     <body class="bg-neutral-100 scroll-smooth">
+      <?php
 
+$nomes = DB::select('select * from Paciente');
+ 
+foreach ($nomes as $nome) {
+    echo $nome->NOME_PACIENTE;
+}
+?>
     </body>
 
 
