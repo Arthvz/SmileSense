@@ -14,6 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,800&display=swap" rel="stylesheet">
   @vite('resources/css/app.css')
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet"> 
+  <script src="/js/scripts.js"></script>
 </head>
   <body id="checkout-page" class="bg-white scroll-smooth">
   <header class="bg-neutral-100 shadow-lg shadow-blueSS-600 mb-7">
@@ -80,7 +81,7 @@
                 <input type="text" class="w-full border rounded-md px-4 py-2 mt-4" placeholder="Razão Social" require>
               </div>
               <div class="form-floating">
-                <input type="number" class="w-full border rounded-md px-4 py-2 mt-4" id="cnpj" name="cnpj" oninput="limitarCaracteres(event)" placeholder="CNPJ" maxlength="14" minlength="14" require>  
+                <input type="number" class="w-full border rounded-md px-4 py-2 mt-4" id="cnpj" name="cnpj" onblur="limitarCaracteres(event)" placeholder="CNPJ" maxlength="14" minlength="14" require>  
               </div>
               <div class="form-floating">
                 <input type="text" class="w-full border rounded-md px-4 py-2 mt-4" id="cep" name="cep" placeholder="Digite o seu CEP" maxlength="8" minlength="8" required/>
@@ -170,7 +171,7 @@
               <input type="number" class="campos-cartao w-full border rounded-md px-4 py-2 mt-4" placeholder="Número do Cartão" require>
               <input type="month" class="campos-cartao w-full border rounded-md px-4 py-2 mt-4" placeholder="Mês" require>
               <input type="number" class="campos-cartao w-full border rounded-md px-4 py-2 mt-4" placeholder="Código de Segurança (CCV)" require>
-              <button id="save-btn" type="submit" class="botão bg-blue-500 text-white font-bold mt-8 mb-15 border-2 rounded-lg px-15 py-2" onclick="verificarFormulario()">Cadastrar e Comprar</button>
+              <button id="save-btn" type="button" class="botão bg-blue-500 text-white font-bold mt-8 mb-15 border-2 rounded-lg px-15 py-2" onclick="verificarFormulario()">Cadastrar e Comprar</button>
             </div>
           </form>
         </div>
