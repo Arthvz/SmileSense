@@ -162,25 +162,52 @@
     </figure>
   </div>
 </section>
-<div class="divider"></div> 
-<section class="bg-gradient-to-r from-blueSS-500 from-5% to-blueSS-200/60 pt-16 pb-16">
+<div class="divider"></div>
+<section class="bg-white pt-16 pb-16">
   <div class="mx-auto max-w-2xl sm:text-center">
-    <h2 class="text-3xl pb-1.5 shadow-sm shadow-neutral-800 font-bold tracking-tight text-neutral-100 sm:text-4xl">O que se espera de nós é:</h2>
-      <div class="mt-20">
-        <div class="flex flex-col w-full lg:flex-row lg:-ml-32">
-          <div class="grid h-100 p-10 flex-grow card bg-base-300 rounded-box place-items-center shadow-2xl shadow-neutral-900"> 
-            <h1 class="text-3xl m-10 font-bold tracking-tight text-neutral-200 sm:text-4xl">Missão</h1>
-            Fornecer atendimento e serviços odontológicos com profissionalismo, qualidade e eficiência, prezando sempre a satisfação e bem-estar dos nossos pacientes.
-          </div> 
-          <div class="divider lg:divider-horizontal bg-neutral-900 p-2 rounded-2xl">+</div> 
-          <div class="grid flex-grow h-100 p-10 card bg-base-300 rounded-box place-items-center shadow-2xl shadow-neutral-900">
-            <h1 class="text-3xl m-10 font-bold tracking-tight text-neutral-100 sm:text-4xl">Visão</h1>
-            Ser referência aos que prezam pela saúde bucal, usando tecnologia e excelência em nossos atendimentos.
+    <h2 class="text-3xl text-center pb-1.5 shadow-sm shadow-neutral-800 font-bold tracking-tight text-neutral-800 sm:text-4xl">O que se espera de nós é:</h2>
+      <div class="mt-20  -ml-32">
+        <div class="flex flex-col w-full lg:flex-row lg:-ml-32 group duration-300">
+          <div class="grid h-100 p-10 mx-10 flex-grow card bg-neutral-100 rounded-box place-items-center shadow-2xl shadow-neutral-900 duration-300 cursor-pointer group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100"> 
+            <div class="text-center content-center">
+              <h1 class="text-3xl m-10 font-bold tracking-tight text-blueSS-200 sm:text-4xl">MISSÃO</h1>
+              <img src="/images/missao.png" class="h-24 mx-auto" alt="">
+            </div>
+            <button class="btn bg-transparent text-neutral-800 m-5" onClick="missao_modal.showModal()">Saber mais!</button>
+            <dialog id="missao_modal" class="bg-transparent">
+              <form method="dialog" class="modal-box">
+                <button for="my-modal-3" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                <h1 class="p-10"><strong>Fornecer atendimento e serviços odontológicos com profissionalismo, qualidade e eficiência, prezando sempre a satisfação e bem-estar dos nossos pacientes.</strong></h1>
+              </form>
+            </dialog>
           </div>
-          <div class="divider lg:divider-horizontal bg-neutral-900 p-2 rounded-2xl">+</div> 
-          <div class="grid flex-grow h-100 p-10 card bg-base-300 rounded-box place-items-center shadow-2xl shadow-neutral-900">
-            <h1 class="text-3xl m-8 font-bold tracking-tight text-neutral-100 sm:text-4xl">Valores</h1>
-            Profissionalismo, ética, odontologia de qualidade com profissionais dedicados e especializados.
+          <div class="divider lg:divider-horizontal bg-neutral-100 p-2 rounded-2xl">+</div> 
+          <div class="grid h-100 p-10 mx-10 flex-grow card bg-neutral-100 rounded-box place-items-center shadow-2xl shadow-neutral-900 duration-300 cursor-pointer group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100"> 
+            <div class="text-center content-center">
+              <h1 class="text-3xl m-10 font-bold tracking-tight text-blueSS-200 sm:text-4xl">VISÃO</h1>
+              <img src="/images/visao.png" class="h-24 mx-auto" alt="">
+            </div>
+            <button class="btn bg-transparent text-neutral-800 m-5" onClick="visao_modal.showModal()">Saber mais!</button>
+            <dialog id="visao_modal" class="bg-transparent">
+              <form method="dialog" class="modal-box">
+                <button for="my-modal-3" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                <h1 class="p-10"><strong>Ser referência aos que prezam pela saúde bucal, usando tecnologia e excelência em nossos atendimentos.</strong></h1>
+              </form>
+            </dialog>
+          </div>
+          <div class="divider lg:divider-horizontal bg-neutral-100 p-2 rounded-2xl">+</div> 
+          <div class="grid h-100 p-10 mx-10 flex-grow card bg-neutral-100 rounded-box place-items-center shadow-2xl shadow-neutral-900 duration-300 cursor-pointer group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100"> 
+            <div class="text-center content-center">
+              <h1 class="text-3xl m-10 font-bold tracking-tight text-blueSS-200 sm:text-4xl">VALORES</h1>
+              <img src="/images/valor.png" class="h-24 mx-auto" alt="">
+            </div>
+            <button class="btn bg-transparent text-neutral-800 m-5" onClick="valor_modal.showModal()">Saber mais!</button>
+            <dialog id="valor_modal" class="bg-transparent">
+              <form method="dialog" class="modal-box">
+                <button for="my-modal-3" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                <h1 class="p-10"><strong>Profissionalizmo, ética, odontologia de qualidade com profissionais dedicados e especializados.</strong></h1>
+              </form>
+            </dialog>
           </div>
         </div>
       </div>
@@ -263,7 +290,7 @@
         <h3 class="text-2xl font-bold tracking-tight text-blueSS-200">Sistema desktop + Sistema WEB</h3>
         <p class="mt-6 text-base leading-7 text-neutral-500">Além de tudo o que se recebe pelo sistema desktop, aqui é incluso um sistema <strong>WEB</strong> que permite mais fidelidade e facilidade para os seus pacientes e seu consultório!</p>
         <div class="mt-10 flex items-center gap-x-4">
-          <h4 class="flex-none text-m font-semibold leading-6 text-blueSS-200">Whats included</h4>
+          <h4 class="flex-none text-m font-semibold leading-6 text-blueSS-200">O que está incluso</h4>
           <div class="h-px flex-auto bg-blueSS-100"></div>
         </div>
         <ul role="list" class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-neutral-500 sm:grid-cols-2 sm:gap-6">
@@ -299,6 +326,64 @@
     </div>
   </div>
 </div>
+
+
+
+<div class="fixed left-0 bottom-0 z-40 " x-data="{cookies: true}" x-init='$watch("cookies", o => !o && window.setTimeout(() => (cookies = false), 30000)); setTimeout(() => cookies = false, 35000)' @keydown.window.escape="cookies = true">
+    <!-- Advise -->
+    <div x-show="cookies" class="fixed sm:left-4 bottom-20 rounded-lg bg-white shadow-2xl w-full sm:w-1/2 xl:w-1/4 max-w-[450px] overflow-hidden"
+         style="display: none;"
+         x-transition:enter="transition ease-in duration-200"
+         x-transition:enter-start="opacity-0 transform -translate-x-40"
+         x-transition:enter-end="opacity-100 transform translate-x-0"
+         x-transition:leave="transition ease-in duration-200"
+         x-transition:leave-start="opacity-100 transform translate-x-0"
+         x-transition:leave-end="opacity-0 transform -translate-x-40">
+
+        <!-- Text -->
+        <div class="opacity-100">
+            <div class="relative overflow-hidden px-8 pt-8 opacity-100">
+                <div width="80" height="77" class="absolute -top-10 -right-10 text-blueSS-500">
+                    <svg width="120" height="119" viewBox="0 0 120 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.9"
+                              d="M6.38128 49.1539C3.20326 32.893 13.809 17.1346 30.0699 13.9566L70.3846 6.07751C86.6455 2.89948 102.404 13.5052 105.582 29.7661L113.461 70.0808C116.639 86.3417 106.033 102.1 89.7724 105.278L49.4577 113.157C33.1968 116.335 17.4384 105.729 14.2604 89.4686L6.38128 49.1539Z"
+                              fill="currentColor"/>
+                    </svg>
+                </div>
+                <div class="text-2xl flex flex-col pb-4">
+                    <small>Olá, </small>
+                    <span class="text-3xl font-bold">Somos os Cookies !</span>
+                </div>
+                <div class="pb-4 opacity-100">
+                    <p>Nós armazenamos dados temporariamente para melhorar a sua experiência de navegação e recomendar conteúdo de seu interesse. Ao utilizar nossos serviços, você concorda com tal monitoramento.
+                      <br><a href="{{route('cookies')}}"><strong>Política de Privacidade</strong></a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <!-- Boutons -->
+        <div class="w-full flex justify-center items-center border-t border-solid border-gray-200">
+            <button class="border-r border-gray-200 flex-1 px-4 py-3 text-gray-500 hover:text-white hover:bg-red-400 duration-150" @click="cookies = false">
+                Não, obrigado !
+            </button>
+            <button class="flex-1 px-4 py-3 text-gray-500 hover:text-white hover:bg-green-400 duration-150" @click="cookies = false">
+                Aceito !
+            </button>
+        </div>
+    </div>
+    <!-- BTN -->
+    <button class="fixed left-4 bottom-2 uppercase text-sm px-4 py-3 bg-gray-900 text-white rounded-full"
+            @click="cookies = !cookies">
+        Cookies
+    </button>
+</div>
+
+
+<script
+    src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+    defer
+></script>
 
       <script>
         const menuToggle = document.getElementById('menu-toggle');

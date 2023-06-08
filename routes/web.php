@@ -46,6 +46,10 @@ Route::get('/Pagteste', function () {
     return view('Pagteste');
 })->name('Pagteste');;
 
+Route::get('/politicas/cookies', function () {
+    return view('cookies');
+})->name('cookies');;
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
