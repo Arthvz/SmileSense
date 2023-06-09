@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agendar | Smile Sense - O seu sistema</title>
+  <title>Política de Cookies | Smile Sense - O seu sistema</title>
   <!-- LINK FAVICON -->
   <link rel="icon" type="image/x-icon" href="/images/favicon/favicon.ico">
 
@@ -108,74 +108,74 @@
 
     <h2>2. Por que usamos Cookies?</h2>
 
-    A (nome empresarial) utiliza Cookies para fornecer a melhor experiência de uso, tornando nossas aplicações mais fáceis e personalizadas, tendo por base suas escolhas e comportamento de navegação.
+    <p>A (nome empresarial) utiliza Cookies para fornecer a melhor experiência de uso, tornando nossas aplicações mais fáceis e personalizadas, tendo por base suas escolhas e comportamento de navegação.</p>
 
-    Assim, buscamos entender como você utiliza nossas aplicações e ajustar o conteúdo para torná-lo mais relevante para você, além de lembrar de suas preferências.
+    <p>Assim, buscamos entender como você utiliza nossas aplicações e ajustar o conteúdo para torná-lo mais relevante para você, além de lembrar de suas preferências.</p>
 
-    Os Cookies participam deste processo porquanto armazenam, leem e executam os dados necessários para cumprir com o nosso objetivo.
-    3. Que tipo de Cookies utilizamos? 
+    <p>Os Cookies participam deste processo porquanto armazenam, leem e executam os dados necessários para cumprir com o nosso objetivo.</p>
+    <h2>3. Que tipo de Cookies utilizamos?</h2>
 
-    Abaixo listamos todos os Cookies que podem ser utilizados pela (nome empresarial). É importante lembrar que você pode gerenciar a permissão concedida para cada Cookie em seu navegador.
+    <p>Abaixo listamos todos os Cookies que podem ser utilizados pela (nome empresarial). É importante lembrar que você pode gerenciar a permissão concedida para cada Cookie em seu navegador.</p>
 
-    Além disso, uma vez que os Cookies capturam dados sobre você, aconselhamos a leitura de nossa Política de Privacidade, disponível neste link (link da política de privacidade).
-    3.1. Cookies necessários
-    Cookie	Tempo	Propriedade	Descrição
-    Cookie	Permanente ou temporário	Proprietário ou de terceiro	Descrição
-    Cookie	Permanente ou temporário	Proprietário ou de terceiro	Descrição
-    Cookie	Permanente ou temporário	Proprietário ou de terceiro	Descrição
-    3.2. Cookies de desempenho 
-    Cookie	Tempo	Propriedade	Descrição
-    Cookie	Permanente ou temporário	Proprietário ou de terceiro	Descrição
-    Cookie	Permanente ou temporário	Proprietário ou de terceiro	Descrição
-    3.3. Cookies de funcionalidade
-    Cookie	Tempo	Propriedade	Descrição
-    Cookie	Permanente ou temporário	Proprietário ou de terceiro	Descrição
-    Cookie	Permanente ou temporário	Proprietário ou de terceiro	Descrição
-    3.4. Cookies de publicidade
-    Cookie	Tempo	Propriedade	Descrição
-    Cookie	Permanente ou temporário	Proprietário ou de terceiro	Descrição
-    Cookie	Permanente ou temporário	Proprietário ou de terceiro	Descrição
-    4. Gerenciamento dos Cookies
+    <p>Além disso, uma vez que os Cookies capturam dados sobre você, aconselhamos a leitura de nossa Política de Privacidade, disponível neste link (link da política de privacidade).</p>
+    <h3>3.1. Cookies necessários</h3>
+    <p>Cookie	Tempo	Propriedade	Descrição</p>
+    <p>Cookie	Permanente ou temporário	Proprietário ou de terceiro	Descrição</p>
+    <p>Cookie	Permanente ou temporário	Proprietário ou de terceiro	Descrição</p>
+    <p>Cookie	Permanente ou temporário	Proprietário ou de terceiro	Descrição</p>
+    <h3>3.2. Cookies de desempenho </h3>
+    <p>Cookie	Tempo	Propriedade	Descrição</p>
+    <p>Cookie	Permanente ou temporário	Proprietário ou de terceiro	Descrição</p>
+    <p>Cookie	Permanente ou temporário	Proprietário ou de terceiro	Descrição</p>
+    <h3>3.3. Cookies de funcionalidade</h3>
+    <p>Cookie	Tempo	Propriedade	Descrição</p>
+    <p>Cookie	Permanente ou temporário	Proprietário ou de terceiro	Descrição</p>
+    <p>Cookie	Permanente ou temporário	Proprietário ou de terceiro	Descrição</p>
+    <h3>3.4. Cookies de publicidade</h3>
+    <p>Cookie	Tempo	Propriedade	Descrição</p>
+    <p>Cookie	Permanente ou temporário	Proprietário ou de terceiro	Descrição</p>
+    <p>Cookie	Permanente ou temporário	Proprietário ou de terceiro	Descrição</p>
+    <h2>4. Gerenciamento dos Cookies</h2>
 
-    A instalação dos cookies está sujeita ao seu consentimento. Apesar da maioria dos navegadores estar inicialmente configurada para aceitar cookies de forma automática, você pode rever suas permissões a qualquer tempo, de forma a bloqueá-los, aceitá-los ou ativar notificações para quando alguns cookies forem enviados ao seu dispositivo. 
+    <p>A instalação dos cookies está sujeita ao seu consentimento. Apesar da maioria dos navegadores estar inicialmente configurada para aceitar cookies de forma automática, você pode rever suas permissões a qualquer tempo, de forma a bloqueá-los, aceitá-los ou ativar notificações para quando alguns cookies forem enviados ao seu dispositivo.</p>
 
-    Atualmente, na primeira vez que você acessa nossas aplicações, será requerida a sua concordância com a instalação destes. Apenas após a sua aceitação eles serão ativados.
+    <p>Atualmente, na primeira vez que você acessa nossas aplicações, será requerida a sua concordância com a instalação destes. Apenas após a sua aceitação eles serão ativados.</p>
 
-    Para tanto, utilizamos um sistema de (banner de informações ou outro mecanismo que alerta e solicita o consentimento) na página inicial de (nome empresarial). Dessa maneira, não apenas solicitamos sua concordância, mas também informamos que a navegação continuada em nossos sites será entendida como consentimento. 
+    <p>Para tanto, utilizamos um sistema de (banner de informações ou outro mecanismo que alerta e solicita o consentimento) na página inicial de (nome empresarial). Dessa maneira, não apenas solicitamos sua concordância, mas também informamos que a navegação continuada em nossos sites será entendida como consentimento.</p> 
 
-    Como já dito, você pode, a qualquer tempo e sem nenhum custo, alterar as permissões, bloquear ou recusar os Cookies. Você também pode configurá-los caso a caso. Todavia, a revogação do consentimento de determinados Cookies pode inviabilizar o funcionamento correto de alguns recursos da plataforma.
+    <p>Como já dito, você pode, a qualquer tempo e sem nenhum custo, alterar as permissões, bloquear ou recusar os Cookies. Você também pode configurá-los caso a caso. Todavia, a revogação do consentimento de determinados Cookies pode inviabilizar o funcionamento correto de alguns recursos da plataforma.</p>
 
-    Para gerenciar os cookies do seu navegador, basta fazê-lo diretamente nas configurações do navegador, na área de gestão de Cookies.
+    <p>Para gerenciar os cookies do seu navegador, basta fazê-lo diretamente nas configurações do navegador, na área de gestão de Cookies.</p>
 
-    Você pode acessar tutoriais sobre o tema diretamente nos links abaixo:
+    <p>ocê pode acessar tutoriais sobre o tema diretamente nos links abaixo:</p>
 
-    Se você usa o Internet Explorer.
+    <p>Se você usa o Internet Explorer.</p>
 
-    Se você usa o Firefox.
+    <p>Se você usa o Firefox.</p>
 
-    Se você usa o Safari.
+    <p>Se você usa o Safari.</p>
 
-    Se você usa o Google Chrome.
+    <p>Se você usa o Google Chrome.</p>
 
-    Se você usa o Microsoft Edge.
+    <p>Se você usa o Microsoft Edge.</p>
 
-    Se você usa o Opera.
-    5. Disposições finais
+    <p>Se você usa o Opera.</p>
+    <h2>5. Disposições finais</h2>
 
-    Para a (nome empresarial), a privacidade e confiança são fundamentais para a nossa relação com você. Estamos sempre nos atualizando para manter os mais altos padrões de segurança 
+    <p>Para a (nome empresarial), a privacidade e confiança são fundamentais para a nossa relação com você. Estamos sempre nos atualizando para manter os mais altos padrões de segurança </p>
 
-    Assim, reservamo-nos o direito de alterar esta Política de Cookies a qualquer tempo. As mudanças entrarão em vigor logo após a publicação, e você será avisado.
+    <p>Assim, reservamo-nos o direito de alterar esta Política de Cookies a qualquer tempo. As mudanças entrarão em vigor logo após a publicação, e você será avisado.</p>
 
-    Ao continuar a navegação nas nossas aplicações após essa mudança se tornar eficaz, você concorda com elas. Aconselhamos que você sempre verifique esta Política, bem como a nossa Política de Privacidade.
+    <p>Ao continuar a navegação nas nossas aplicações após essa mudança se tornar eficaz, você concorda com elas. Aconselhamos que você sempre verifique esta Política, bem como a nossa Política de Privacidade.</p>
 
-    Em caso de dúvidas sobre esta Política de Cookies, entre em contato conosco pelos seguintes meios:
+    <p>Em caso de dúvidas sobre esta Política de Cookies, entre em contato conosco pelos seguintes meios:</p>
 
-        Meio de contato: email, telefone ou outra forma
-        Meio de contato: email, telefone ou outra forma
+    <p>Meio de contato: <a>smilesense@outlook.com</a></p>
+    <p>Meio de contato: email, telefone ou outra forma</p>
 
-    Esta Política de Cookies foi atualizada pela última vez: xx/xx/xxxx.
+    <p>Esta Política de Cookies foi atualizada pela última vez: 09/06/2023.</p>
 
-    O presente modelo foi produzido pela Equipe Legalcloud para auxiliar na elaboração de uma Política de Cookies. Veja o modelo original aqui.
+    <p>O presente modelo foi produzido pela Equipe Legalcloud para auxiliar na elaboração de uma Política de Cookies. Veja o modelo original aqui.</p>
     </p>
 </section>
 <footer class="footer footer-center p-10 bg-neutral-100 text-base-content rounded">
