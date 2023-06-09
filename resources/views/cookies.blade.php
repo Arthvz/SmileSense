@@ -207,8 +207,14 @@
 </footer>
 
       <script>
-        const menuToggle = document.getElementById('menu-toggle');
+         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
+        const openMenu = document.getElementById('open-menu');
+
+        openMenu.addEventListener('click', function(){
+          mobileMenu.classList.remove('hidden');
+          mobileMenu.classList.add('block');
+        });
 
         menuToggle.addEventListener('click', function() {
           if (mobileMenu.classList.contains('hidden')) {
