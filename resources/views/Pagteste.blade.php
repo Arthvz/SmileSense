@@ -167,7 +167,7 @@
               <span class="text-gray-500">Insira a imagem aqui (600x600)</span>
             </div>
             <div class="grid grid-cols-2 gap-4">
-              <input type="text" class="campos-cartao w-full border rounded-md px-4 py-2 mt-4" placeholder="Nome no Cartão" require>
+              <input type="text" class="campos-cartao w-full border rounded-md px-4 py-2 mt-4" placeholder="Nome no Cartão" onkeydown="validateCardNumber(event)" onchange="validateCardNumber(event)" require>
               <input type="number" class="campos-cartao w-full border rounded-md px-4 py-2 mt-4" placeholder="Número do Cartão" require>
               <input type="month" class="campos-cartao w-full border rounded-md px-4 py-2 mt-4" placeholder="Mês" require>
               <input type="number" class="campos-cartao w-full border rounded-md px-4 py-2 mt-4" placeholder="Código de Segurança (CCV)" require>

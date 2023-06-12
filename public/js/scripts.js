@@ -225,5 +225,53 @@ function limitarCaracteres(event) {
     input.value = input.value.slice(0, maxLength);
   }
 }
+function validateCardNumber(event) {
+  var cardNumberInput = event.target;
+  var cardNumber = cardNumberInput.value.replace(/\s/g, ''); // Remover espaços em branco
+
+  // Limitar o número de caracteres
+  if (cardNumber.length >= 16) {
+    cardNumberInput.value = cardNumber.slice(0, 16);
+  }
+
+  // Verificar se o número é válido
+  var isValid = isCardNumberValid(cardNumber);
+
+  if (isValid) {
+    cardNumberInput.classList.remove('error'); // Remover classe de erro
+  } else {
+    cardNumberInput.classList.add('error'); // Adicionar classe de erro
+  }
+}
+
+function validateCardName(event) {
+  var cardNameInput = event.target;
+  var cardName = cardNameInput.value.trim();
+
+  // Verificar se o nome está vazio
+  if (cardName === '') {
+    cardNameInput.classList.add('error');
+  } else {
+    cardNameInput.classList.remove('error');
+  }
+}
+
+function isCardNumberValid(cardNumber) {
+  // Implemente aqui seu algoritmo de validação de cartão
+  // Este exemplo utiliza uma verificação básica do número de dígitos
+
+  // Verificar se o número possui 16 dígitos
+  if (cardNumber.length !== 16) {
+    return false;
+  }
+
+  return true;
+}
+
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Tab') {
+    validateCardNumber(event);
+  }
+});
 
 
