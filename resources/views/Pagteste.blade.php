@@ -246,15 +246,6 @@
     </div>
   </div>
   <div>
-    <span class="footer-title text-neutral-900">Newsletter</span> 
-    <div class="form-control w-80"> 
-      <div class="relative">
-        <input type="text" placeholder="E-mail..." class="input input-bordered w-full pr-16" /> 
-        <button class="btn btn-blueSS-500 bg-blueSS-500 absolute top-0 right-0 rounded-l-none">Subscribe</button>
-      </div>
-    </div>
-  </div>
-  <div>
     <p class="text-neutral-600">Copyright © 2023 - Todos os direitos reservados Smile Sense.</p>
   </div>
 </footer>

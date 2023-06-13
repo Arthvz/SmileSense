@@ -8,16 +8,12 @@
   <!-- LINK FAVICON -->
   <link rel="icon" type="image/x-icon" href="/images/favicon/favicon.ico">
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-  <script type="module" src="./js/markers.js"></script>
-
   <!-- LINK STYLES -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,800&display=swap" rel="stylesheet">
   @vite('resources/css/app.css')
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet"> 
-
   <script src="/resources/js/map.js"></script>
 </head>
 <body class="bg-neutral-100 scroll-smooth">
@@ -77,13 +73,6 @@
   </div>
 </header>
   <div id="map" class ="w-full h-148"></div>
-
-  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv7YRz1WWPhkr6aim8wEm4WDPBdk81z54&callback=initMap&v=weekly"
-    async
-    defer
-  ></script>
 </body>
 <footer class="footer footer-center p-10 bg-neutral-100 text-base-content rounded">
   <div class="grid text-neutral-600 grid-flow-col gap-4">
@@ -100,20 +89,10 @@
     </div>
   </div>
   <div>
-    <span class="footer-title text-neutral-900">Newsletter</span> 
-    <div class="form-control w-80"> 
-      <div class="relative">
-        <input type="text" placeholder="E-mail..." class="input input-bordered w-full pr-16" /> 
-        <button class="btn btn-blueSS-500 bg-blueSS-500 absolute top-0 right-0 rounded-l-none">Subscribe</button>
-      </div>
-    </div>
-  </div>
-  <div>
     <p class="text-neutral-600">Copyright © 2023 - Todos os direitos reservados Smile Sense.</p>
   </div>
 </footer>
-
-      <script>
+<script>
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
         const openMenu = document.getElementById('open-menu');
@@ -132,27 +111,28 @@
             mobileMenu.classList.add('hidden');
           }
         });
+        
+        let map;
 
-      </script>
-
-<script>
-  let map;
-
-  function initMap() {
-      const myLatLng = { lat: -23.6071, lng: -46.752 };
-      const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 14,
-        center: myLatLng,
-      });
-      
-      //LOCAIS DE AGRESSÃO
-      var beachMarker = new google.maps.Marker({
-          position: new google.maps.LatLng(-23.619627,-46.771811),
-          map: map,
-          icon: '/images/blue_Marker.png',
-          title: "Consultório Adriana Tavares",
-        });
-  }
-
+        function initMap() {
+            const myLatLng = { lat: -23.6071, lng: -46.752 };
+            const map = new google.maps.Map(document.getElementById("map"), {
+              zoom: 14,
+              center: myLatLng,
+            });
+            
+            //LOCAIS DE AGRESSÃO
+            var beachMarker = new google.maps.Marker({
+                position: new google.maps.LatLng(-23.619627,-46.771811),
+                map: map,
+                icon: '/images/blue_Marker.png',
+                title: "Consultório Adriana Tavares",
+              });
+        };
+        window.initMap = initMap;
 </script>
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv7YRz1WWPhkr6aim8wEm4WDPBdk81z54&callback=initMap&v=weekly"
+      async
+    ></script>
 </html>
