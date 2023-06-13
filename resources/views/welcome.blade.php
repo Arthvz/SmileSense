@@ -57,7 +57,7 @@
       </a>
     </div>
     <div class="flex lg:hidden">
-      <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-blueSS-300">
+      <button type="button" id="open-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-blueSS-300">
         <span class="sr-only">Abrir menu</span>
         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -75,7 +75,7 @@
     </div>
   </nav>
   <!-- Mobile menu, show/hide based on menu open state. -->
-  <div id="mobile-menu" class="lg:hidden" role="dialog" aria-modal="true">
+  <div id="mobile-menu" class="lg:hidden hidden" role="dialog" aria-modal="true">
     <!-- Background backdrop, show/hide based on slide-over state. -->
     <div class="fixed inset-0 z-10"></div>
     <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-blueSS-400 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
@@ -168,12 +168,12 @@
     <h2 class="text-3xl text-center pb-1.5 shadow-sm shadow-neutral-800 font-bold tracking-tight text-neutral-800 sm:text-4xl">O que se espera de nós é:</h2>
       <div class="mt-20  -ml-32">
         <div class="flex flex-col w-full lg:flex-row lg:-ml-32 group duration-300">
-          <div class="grid h-100 p-10 mx-10 flex-grow card bg-neutral-100 rounded-box place-items-center shadow-2xl shadow-neutral-900 duration-300 cursor-pointer group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100"> 
+          <div class="grid h-100 p-10 lg:mx-10 flex-grow card bg-neutral-100 rounded-box place-items-center shadow-2xl shadow-neutral-900 duration-300 cursor-pointer group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100"> 
             <div class="text-center content-center">
               <h1 class="text-3xl m-10 font-bold tracking-tight text-blueSS-200 sm:text-4xl">MISSÃO</h1>
               <img src="/images/missao.png" class="h-24 mx-auto" alt="">
             </div>
-            <button class="btn bg-transparent text-neutral-800 m-5" onClick="missao_modal.showModal()">Saber mais!</button>
+            <button class="btn bg-transparent text-neutral-800 hover:!text-neutral-100 m-5" onClick="missao_modal.showModal()">Saber mais!</button>
             <dialog id="missao_modal" class="bg-transparent">
               <form method="dialog" class="modal-box">
                 <button for="my-modal-3" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
@@ -182,12 +182,12 @@
             </dialog>
           </div>
           <div class="divider lg:divider-horizontal bg-neutral-100 p-2 rounded-2xl">+</div> 
-          <div class="grid h-100 p-10 mx-10 flex-grow card bg-neutral-100 rounded-box place-items-center shadow-2xl shadow-neutral-900 duration-300 cursor-pointer group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100"> 
+          <div class="grid h-100 p-10 lg:mx-10 flex-grow card bg-neutral-100 rounded-box place-items-center shadow-2xl shadow-neutral-900 duration-300 cursor-pointer group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100"> 
             <div class="text-center content-center">
               <h1 class="text-3xl m-10 font-bold tracking-tight text-blueSS-200 sm:text-4xl">VISÃO</h1>
               <img src="/images/visao.png" class="h-24 mx-auto" alt="">
             </div>
-            <button class="btn bg-transparent text-neutral-800 m-5" onClick="visao_modal.showModal()">Saber mais!</button>
+            <button class="btn bg-transparent text-neutral-800 hover:!text-neutral-100 m-5" onClick="visao_modal.showModal()">Saber mais!</button>
             <dialog id="visao_modal" class="bg-transparent">
               <form method="dialog" class="modal-box">
                 <button for="my-modal-3" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
@@ -196,12 +196,12 @@
             </dialog>
           </div>
           <div class="divider lg:divider-horizontal bg-neutral-100 p-2 rounded-2xl">+</div> 
-          <div class="grid h-100 p-10 mx-10 flex-grow card bg-neutral-100 rounded-box place-items-center shadow-2xl shadow-neutral-900 duration-300 cursor-pointer group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100"> 
+          <div class="grid h-100 p-10 lg:mx-10 flex-grow card bg-neutral-100 rounded-box place-items-center shadow-2xl shadow-neutral-900 duration-300 cursor-pointer group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100"> 
             <div class="text-center content-center">
               <h1 class="text-3xl m-10 font-bold tracking-tight text-blueSS-200 sm:text-4xl">VALORES</h1>
               <img src="/images/valor.png" class="h-24 mx-auto" alt="">
             </div>
-            <button class="btn bg-transparent text-neutral-800 m-5" onClick="valor_modal.showModal()">Saber mais!</button>
+            <button class="btn bg-transparent text-neutral-800 hover:!text-neutral-100 m-5" onClick="valor_modal.showModal()">Saber mais!</button>
             <dialog id="valor_modal" class="bg-transparent">
               <form method="dialog" class="modal-box">
                 <button for="my-modal-3" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
@@ -331,7 +331,7 @@
 
 <div class="fixed left-0 bottom-0 z-40 " x-data="{cookies: true}" x-init='$watch("cookies", o => !o && window.setTimeout(() => (cookies = false), 30000)); setTimeout(() => cookies = false, 35000)' @keydown.window.escape="cookies = true">
     <!-- Advise -->
-    <div x-show="cookies" class="fixed sm:left-4 bottom-20 rounded-lg bg-white shadow-2xl w-full sm:w-1/2 xl:w-1/4 max-w-[450px] overflow-hidden"
+    <div x-show="cookies" id="cookies-card" class="hidden fixed sm:left-4 bottom-20 rounded-lg bg-white shadow-2xl w-full sm:w-1/2 xl:w-1/4 max-w-[450px] overflow-hidden"
          style="display: none;"
          x-transition:enter="transition ease-in duration-200"
          x-transition:enter-start="opacity-0 transform -translate-x-40"
@@ -384,10 +384,24 @@
     src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
     defer
 ></script>
+<script>
+    const cookiesCard = document.getElementById('cookies-card');
+
+    setTimeout(function(){
+      cookiesCard.classList.remove('hidden');
+      cookiesCard.classList.add('block');
+    }, 3000);
+</script>
 
       <script>
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
+        const openMenu = document.getElementById('open-menu');
+
+        openMenu.addEventListener('click', function(){
+          mobileMenu.classList.remove('hidden');
+          mobileMenu.classList.add('block');
+        });
 
         menuToggle.addEventListener('click', function() {
           if (mobileMenu.classList.contains('hidden')) {
