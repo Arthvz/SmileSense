@@ -14,7 +14,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,800&display=swap" rel="stylesheet">
   @vite('resources/css/app.css')
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet"> 
-  <script src="/js/scripts.js"></script>
 </head>
   <body id="checkout-page" class="bg-white scroll-smooth">
   <header class="bg-neutral-100 shadow-lg shadow-blueSS-600 mb-7">
@@ -70,6 +69,20 @@
     </div>
   </div>
 </header>
+  <div id="fade" class="visibility: hidden">
+    <div id="loader" class="spinner-border text-info visibility: hidden" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div id="message" class="visibility: hidden">
+      <div class="alert alert-light" role="alert">
+        <h4>Mensagem:</h4>
+        <p></p>
+        <button id="close-message" type="button" class="btn btn-secondary">
+          Fechar
+        </button>
+      </div>
+    </div>
+  </div>
     <div id="form-header">
       <h2 class="Titulo text-2xl text-blue-500 text-center">Formulário de Cadastro</h2>
       <p class="text-center">Preencha os campos abaixo para realizar o cadastro da sua empresa no sistema e continuar a compra do seu pedido</p>
@@ -81,7 +94,7 @@
                 <input type="text" class="w-full border rounded-md px-4 py-2 mt-4" placeholder="Razão Social" require>
               </div>
               <div class="form-floating">
-                <input type="number" class="w-full border rounded-md px-4 py-2 mt-4" id="cnpj" name="cnpj" onblur="limitarCaracteres(event)" placeholder="CNPJ" maxlength="14" minlength="14" require>  
+                <input type="number" class="w-full border rounded-md px-4 py-2 mt-4" id="cnpj" name="cnpj" oninput="limitarCaracteres(event)" placeholder="CNPJ" maxlength="14" minlength="14" require>  
               </div>
               <div class="form-floating">
                 <input type="text" class="w-full border rounded-md px-4 py-2 mt-4" id="cep" name="cep" placeholder="Digite o seu CEP" maxlength="8" minlength="8" required/>
@@ -222,4 +235,5 @@
     <p class="text-neutral-600">Copyright © 2023 - Todos os direitos reservados Smile Sense.</p>
   </div>
 </footer>
+<script src="/js/scripts.js"></script>
 </html>

@@ -274,4 +274,16 @@ document.addEventListener('keydown', function(event) {
   }
 });
 
+function isCardNumberValid(cardNumber) {
+  // Implemente aqui seu algoritmo de validação de cartão
+  // Este exemplo utiliza uma verificação básica do número de dígitos
+
+  // Verificar se o número possui 16 dígitos
+  if (cardNumber.length !== 16) {
+    return false;
+  }
+
+  return true;
+}
+
 
